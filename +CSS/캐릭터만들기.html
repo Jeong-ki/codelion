@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>캐릭터 만들기</title>
+  <style>
+    html {
+      padding: 50px;
+    }
+    div {
+      width: 100px;
+      height: 100px;
+      }
+    .left_ear {
+      position: relative;
+      background: #1f1e1b;
+      display: inline-block;
+      border: 10px solid black;
+      border-radius: 30% 70% 30% 70%;
+      transform: rotate(23deg);
+      margin-right: 220px;
+    }
+    .right_ear {
+      background: #1f1e1b;
+      display: inline-block;
+      border: 10px solid black;
+      border-radius: 70% 30% 70% 30%;
+      transform: rotate(15deg)
+    }
+    .face {
+      background: rgb(255, 208, 121);
+      position: absolute;
+      left: 75px;
+      top: 85px;
+      width: 410px;
+      height: 380px;
+      border: 10px solid black;
+      border-radius: 49%;
+    }
+    .left_eye {
+      position: absolute;
+      left: 190px;
+      top: 190px;
+      width: 33px;
+      height: 33px;
+      background: white;
+      border: 10px solid black;
+      border-radius: 50%;
+    }
+    .right_eye {
+      position: absolute;
+      left: 340px;
+      top: 190px;
+      width: 33px;
+      height: 33px;
+      background: white;
+      border: 10px solid black;
+      border-radius: 50%;
+    }
+    .nose {
+      position: absolute;
+      left: 261px;
+      top: 250px;
+      width: 60px;
+      height: 30px;
+      background: black;
+      border-radius: 40%;
+    }
+    .line {
+      position: absolute;
+      left: 285px;
+      top: 270px;
+      width: 12px;
+      height: 100px;
+      background: black;
+    }
+    .mouse {
+      position: absolute;
+      left: 241px;
+      top: 310px;
+      width: 85px;
+      height: 95px;
+      background: rgb(255, 82, 82);
+      border: 9px solid black;
+      border-radius: 15%;
+    }
+    .홍조왼쪽 {
+      position: absolute;
+      left: 140px;
+      top: 270px;
+      width: 50px;
+      height: 35px;
+      background: rgb(255, 115, 50);
+      border-radius: 50%;
+    }
+    .홍조오른쪽 {
+      position: absolute;
+      left: 390px;
+      top: 270px;
+      width: 50px;
+      height: 35px;
+      background: rgb(255, 115, 50);
+      border-radius: 50%;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="left_ear"></div>
+  <div class="right_ear"></div>
+  <div class="face"></div>
+  <div class="left_eye"></div>
+  <div class="right_eye"></div>
+  <div class="nose"></div>
+  <div class="line"></div>
+  <div class="mouse"></div>
+  <div class="홍조왼쪽"></div>
+  <div class="홍조오른쪽"></div>
+</body>
+</html>

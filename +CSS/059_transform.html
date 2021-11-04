@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transform</title>
+  <style>
+    .one {
+      box-sizing: border-box;
+      height: 100px;
+      width: 200px;
+      background: chocolate;
+      border: darkgoldenrod solid 5px;
+      border-radius: 30px;
+      text-align: center;
+      line-height: 90px;
+      color: white;
+      font-size: 28px;
+      transition: all 1s;
+    }
+    .one:hover {
+      background: gold;
+      transform: rotate(90deg) scale(1.2);
+    }
+
+    .two {
+      box-sizing: border-box;
+      height: 100px;
+      width: 200px;
+      background: chocolate;
+      border: darkgoldenrod solid 5px;
+      border-radius: 30px;
+      text-align: center;
+      line-height: 90px;
+      color: white;
+      font-size: 28px;
+      transition: all 1s;
+    }
+    .two:hover {
+      background: gold;
+      /* transform: skew(30deg, 20deg) */
+      transform: translate(100px, 200px);
+    }
+  </style>
+</head>
+<body>
+  <div class="one">눌 럿~</div>
+  <br><br>
+  <div class="two">눌 럿~</div>
+</body>
+</html>
