@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+      ul {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: repeat(5, 1fr);
+      }
+
+      li {
+        border: 1px solid black;
+      }
+      .first {
+        grid-column: 1 / 4;
+        grid-row: 1 / 3;
+      }
+      .second {
+        grid-column: 4 / 6;
+        grid-row: 1 / 4;
+      }
+      .third {
+        grid-column: 1 / 3;
+      }
+      .forth {
+        
+      }
+      .fifth {
+        grid-column: 1 / 3;
+        grid-row: 4 / 6;
+      }
+      .sixth {
+        grid-column: 3 / 6;
+        grid-row: 4 / 6;
+      }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="first">1</li>
+        <li class="second">2</li>
+        <li class="third">3</li>
+        <li class="forth">4</li>
+        <li class="fifth">5</li>
+        <li class="sixth">6</li>
+    </ul>
+</body>
