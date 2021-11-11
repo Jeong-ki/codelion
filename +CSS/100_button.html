@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>button</title>
+  <style>
+    @keyframes 올려 {
+      0% {
+        transform: translate(0, 40px);
+        background-color: lightpink;
+      }
+      20% {
+        transform: translate(0, -40px);
+        background-color: lightpink;
+      }
+      40% {
+        transform: translate(0, 25px);
+        background-color: lightsalmon;
+      }
+      60% {
+        transform: translate(0, -25px);
+        background-color: lightsalmon;
+      }
+      80% {
+        transform: translate(0, 10px);
+      }
+      100% {
+        transform: translate(0, 0px);
+      }
+    }
+
+    .btn {
+      width: 135px;
+      border: 4px solid palevioletred;
+      border-radius: 4px;
+      padding: 30px 60px;
+      background: none;
+      color: palevioletred;
+      font-size: 32px;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      transition: all .20s;
+    }
+    .btn:hover {
+      border-color: tomato;
+      color: whitesmoke;
+    }
+    .btn:hover::before {
+      content: "";
+      position: absolute;
+      top: -30px;
+      left: -22px;
+      background: tomato;
+      border-radius: 45%;
+      width: 300px;
+      height: 400px;
+      animation: 올려 0.5s;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <div class="btn">Click Me!!</div>
+</body>
+</html>
