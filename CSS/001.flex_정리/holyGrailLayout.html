@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../reset.css">
+  <title></title>
+  <style>
+    body {
+      padding: 10px;
+    }
+    .container {
+      display: flex;
+    }
+    menu {
+      display: flex;
+      height: 15vh;
+      align-items: center;
+      justify-content: center;
+      background-color: lightskyblue;
+    }
+    .item {
+      padding-right: 20px;
+      padding-left: 20px;
+      color: black;
+      text-align: center;
+      width: 100px;
+      font-size: 1.2em;
+      font-weight: 700;
+      line-height: 2.5em;
+    }
+
+    main {
+      height: 70vh;
+      display: flex;
+    }
+    section {
+      background-color: lightyellow;
+      flex-grow: 2;
+    }
+    aside {
+      background-color: lightgreen;
+      flex-grow: 1;
+    }
+    footer {
+      height: 15vh;
+      background-color: lightsalmon;
+    }
+
+    @media screen and (max-width: 800px) {
+      main {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <menu>
+    <ul class="container">
+      <li class="item">LOGO</li>
+      <li class="item">ABOUT</li>
+      <li class="item">SKILL</li>
+      <li class="item">PORTFOLIO</li>
+      <li class="item">CONTACT</li>
+    </ul>
+  </menu>
+  <main>
+    <section>
+      <article>article</article>
+      <article>article</article>
+      <article>article</article>
+    </section>
+    <aside>
+      <ul>
+        <li>aside</li>
+        <li>aside</li>
+        <li>aside</li>
+        <li>aside</li>
+        <li>aside</li>
+      </ul>
+    </aside>
+  </main>
+  <footer>
+    footer
+  </footer>
+</body>
+</html>
