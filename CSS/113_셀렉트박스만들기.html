@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>셀렉트 박스 만들기</title>
+  <link rel="stylesheet" href="./reset.css">
+  <style>
+    .cont-select {
+      margin: 100px;
+      width: 200px;
+      height: 40px;   
+    }
+    .btn-select {
+      position: relative;
+      padding-right: 80px;
+      width: 100%;
+      height: 100%; 
+      background: #FFFFFF;
+      background-color: rgba(0,0,0,0);
+      border: 1px solid #C4C4C4;
+      box-sizing: border-box;
+      border-radius: 10px;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;    
+      line-height: 14px;
+      cursor: pointer;
+    }
+    .btn-select::after {
+      content: "";
+      position: absolute;
+      right: 13px;
+      top: 16px;
+      width: 12px;
+      height: 8px;
+      background: #C4C4C4;
+      border-radius: 1px;
+      transform: rotate(180deg);
+    }
+    .list-member {
+      margin-top: 10px;
+      border: 1px solid #C4C4C4;
+      border-radius: 10px;
+    }
+    .list-member li {
+      width: 100%;
+      height: 40px;
+    }
+    .list-member button {
+      width: 184px;
+      height: 30px;
+      margin: 5px 8px;
+      background-color: white;
+      border: none;
+      text-align: left;
+    }
+
+    .on {
+      border: 1px solid #9B51E0;
+      outline: 3px solid #F8E4FF;
+    }
+    .on + .list-member {
+      display: block;
+    }
+
+  </style>
+</head>
+<body>
+    <h2>셀렉트 박스 만들기</h2>
+    <article class="cont-select">
+        <button class="btn-select">최애 프로그래밍 언어</button>
+        <ul class="list-member">
+            <li><button type="button">Python</button></li>
+            <li><button type="button">Java</button></li>
+            <li><button type="button">JavaScript</button></li>
+            <li><button type="button">C#</button></li>
+            <li><button type="button">C/C++</button></li>
+        </ul>
+    </article>
+
+    <script>
+        const btn = document.querySelector('.btn-select');
+        const list = document.querySelector('.list-member');
+        btn.addEventListener('click', () => {
+            btn.classList.toggle('on');
+        });
+        list.addEventListener('click', (event) => {
+            if (event.target.nodeName === "BUTTON") {
+                btn.innerText = event.target.innerText;
+                btn.classList.remove('on');
+            }
+        });
+    </script>
+</body>
+</html>
