@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이력서</title>
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <header class="absolute left-1/4 bg-white my-16 py-5 flex flex-col items-center w-2/4 border-solid border-4 border-black">
+    <h1 class="text-3xl font-bold">정기수</h1>
+    <p class="text-gray-500">Jeong Kisoo</p>
+    <p class="text-gray-500">Frontend Engineer</p>
+  </header>
+  <aside class=" float-left bg-gray-200 w-2/6 p-10 pt-32">
+    <h2 class="font-bold text-1xl border-b-4 border-black mt-32">DETAILS</h2>
+    <dl class="pt-5">
+      <dt class="font-bold">Address</dt>
+      <dd class="pb-3">경기도 원주시 신사동</dd>
+      <dt class="font-bold">EMAIL</dt>
+      <dd class="pb-3">7863z@naver.com</dd>
+      <dt class="font-bold">PHONE</dt>
+      <dd class="pb-3">010-2926-3532</dd>
+      <dt class="font-bold">Github & Blog</dt>
+      <dd>
+        <a href="https://github.com/Jeong-ki">https://github.com/Jeong-ki</a><br>
+        <a href="https://velog.io/@jeongki">https://velog.io/@jeongki</a>
+      </dd>
+    </dl>
+
+    <h2 class="font-bold text-1xl border-b-4 border-black mt-12">SKILLS</h2>
+    <ul class="h-screen list-disc p-5"> <!-- aside에 높이를 screen/full로 줘도 안됨.. -->
+      <li>HTML/CSS</li>
+      <li class="pt-3">JavaScript</li>
+      <li class="pt-3">Node/Express</li>
+      <li class="pt-3">MongoDB & MySQL</li>
+      <li class="pt-3">React</li>
+    </ul>
+  </aside>
+  <main class="float-right bg-white w-4/6 h-max p-10 pt-32">
+    <section class="mt-32">
+      <h2 class="font-bold text-1xl border-b-4 border-black">PROFILE</h2>
+      <p class="pt-5">
+        프론트엔드 개발자 정기수입니다. 개발은 항상 즐겁고 재밌게 해야한다는 생각을 갖고 있으며 사용자들이 편하고 유용하게 사용할 수 있는 서비스를 만드는 것을 목표로 하고있습니다. 생각나는 것을 메모하고 구현하면서 많은 서비스들을 만들어 나가고 있습니다.
+      </p>
+    </section>
+    <section class="mt-9">
+      <h2 class="font-bold text-1xl border-b-4 border-black">PROJECT</h2>
+      <section class="relative">
+        <h3 class="pt-5 font-bold text-1xl">1만 시간의 법칙</h3>
+        <div class="text-white bg-gray-400 rounded-full py-0 px-2 absolute top-5 right-5">html/css</div>
+        <p class="text-sm text-gray-700 text-opacity-50">2021.11.11</p>
+        <ul class="list-disc pl-8">
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis voluptate possimus veritatis, fugit quidem obcaecati incidunt cumque voluptas dolorem necessitatibus!</li>
+          <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel exercitationem ullam modi minima quibusdam consectetur neque iusto. Fugiat magni praesentium inventore amet architecto animi suscipit?</li>
+        </ul>
+      </section>
+      <section class="mt-5 relative">
+      <h3 class="pt-5 font-bold text-1xl">벤딩 머신</h3>
+      <div class="text-white bg-gray-400 rounded-full py-0 px-2 absolute top-5 right-5">html/css</div>
+        <p class="text-sm text-gray-700 text-opacity-50">2021.11.12 - 2021.11.13</p>
+        <ul class="list-disc pl-8">
+          <li>LorLorem, ipsum dolor sit amet consectetur adipisicing elit.</li>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing elitLorem, ipsum dolor sit amet consectetur adipisicing elitconsectetur adipisicing.</li>
+          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus non .</li>
+        </ul>
+      </section>
+      <section class="mt-5 relative">
+      <h3 class="pt-5 font-bold text-1xl">렌딩 페이지</h3>
+      <div class="text-white bg-gray-500 rounded-full py-0 px-2 absolute top-5 right-20">JavaScript</div>
+      <div class="text-white bg-gray-600 rounded-full py-0 px-2 absolute top-5 right-5">Node</div>
+        <p class="text-sm text-gray-700 text-opacity-50">2021.11.21 - 2021.11.23</p>
+        <ul class="list-disc pl-8">
+          <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt?onsectetur adipisicing</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quis fugit explicabo eveniet veritatis hic.</li>
+          <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.lorem5</li>
+        </ul>
+      </section>
+      <section class="mt-5 relative">
+        <h3 class="pt-5 font-bold text-1xl">감귤 마켓</h3>
+        <div class="text-white bg-gray-500 rounded-full py-0 px-2 absolute top-5 right-24">React</div>
+        <div class="text-white bg-gray-600 rounded-full py-0 px-2 absolute top-5 right-5">Express</div>
+          <p class="text-sm text-gray-700 text-opacity-50">2021.12.1 - 2021.12.8</p>
+          <ul class="list-disc pl-8">
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas ipsum sequi illo recusandae! Consequatur at eaque ipsum velit quam.</li>
+            <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi, eaque repudiandae fugit unde laboriosam voluptas pariatur at quod consequatur illum nemo distinctio ut nihil voluptates nostrum rerum, sequi eos facilis.</li>
+            <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus adipisci quod vitae ipsam natus, error nobis. Corrupti inventore beatae repellendus repellat? Alias accusantium dolores cupiditate sed esse velit culpa, aut illo, ad voluptatum, cumque nulla corrupti iure ipsum.</li>
+          </ul>
+        </section>
+    </section>
+    <section class="mt-9">
+      <h2 class="font-bold text-1xl border-b-4 border-black">Experience</h2>
+      <p class="pt-5 font-bold text-1xl">강릉원주대학교 (2016.3.1 ~ 2022.2.20)</p>
+      <ul class="list-disc pl-5 pt-1">
+        <li>정보처리기사 자격증 취득</li>
+        <li>홈페이지 개발 프로젝트</li>
+      </ul>
+      <p class="font-bold text-1xl mt-5">멋쟁이 사자처럼 (2021.10.27 ~ 2022.1.27)</p>
+      <ul class="list-disc pl-5 pt-1">
+        <li>1만 시간의 법칙</li>
+        <li>벤딩머신</li>
+        <li>렌딩페이지</li>
+        <li>감귤마켓</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
