@@ -1,0 +1,6 @@
+// sass 공식문서 - maps
+$font-weights: ("regular": 400, "medium": 500, "bold": 700);
+
+div {
+  font-weight: map-get($font-weights, "bold");
+}

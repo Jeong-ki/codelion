@@ -1,0 +1,12 @@
+// mixin arguments 인수 사용
+
+@mixin hojun-font($x, $y) {
+  font-size: $x * $y + px;
+  @content
+} 
+
+div {
+  @include hojun-font(10, 10){
+    color: red;
+  }
+}

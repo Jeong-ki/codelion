@@ -1,0 +1,17 @@
+@debug "Helvetica" + " Neue"; // "Helvetica Neue"
+@debug sans- + serif; // sans-serif
+@debug sans - serif; // sans-serif
+
+
+@debug "Elapsed time: " + 10s; // "Elapsed time: 10s";
+@debug true + " is a boolean value"; // "true is a boolean value";
+
+.status-bar {
+	font-family : "Noto Sans KR", sans- + serif;
+}
+
+td {
+	&::after{
+		content : "Heades" + " up!"; // 문자열 더하기
+	}
+}
