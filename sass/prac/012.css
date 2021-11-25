@@ -1,0 +1,8 @@
+.status-bar {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+td::after {
+  content: "Heades up!";
+}
+/*# sourceMappingURL=012.css.map */

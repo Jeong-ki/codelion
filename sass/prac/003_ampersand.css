@@ -1,0 +1,11 @@
+.box {
+  width: 100px;
+  height: 100px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.box:hover {
+  background-color: pink;
+}
+/*# sourceMappingURL=003_ampersand.css.map */
