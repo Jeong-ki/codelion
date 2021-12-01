@@ -18,6 +18,7 @@ let x = [11, 22, 33, 111, 2];
 // }
 // console.log(sum);
 let xs = x.join('');
+console.log(xs);
 let sum = 0;
 for(let z of xs) {
   sum += parseInt(z);
