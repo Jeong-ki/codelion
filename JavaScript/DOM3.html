@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM3</title>
+  <style>
+    .box {
+      width: 500px;
+      height: 500px;
+    }
+    .box.red {
+      background-color: red;
+    }
+    .box.blue {
+      background-color: blue;
+    }
+    .box.yellow {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <span>
+    <button class="red">빨강</button>
+    <button class="blue">파랑</button>
+    <button class="yellow">노랑</button>
+  </span>
+
+  <script>
+    const box = document.querySelector(".box");
+    const rBtn = document.querySelector(".red");
+    const bBtn = document.querySelector(".blue");
+    const yBtn = document.querySelector(".yellow");
+
+    let btnArr = [rBtn, bBtn, yBtn];
+    btnArr.forEach((item) => {
+      item.addEventListener('click', function(){
+        box.classList.remove('red', 'blue', 'yellow');
+        console.log(item.className);
+        if(item.className === "red") {
+          box.classList.add('red');
+        } else if(item.className === "blue") {
+          box.classList.add('blue');
+        } else {
+          box.classList.add('yellow');
+        }
+      });
+    })
+
+    // rBtn.addEventListener('click', function(){
+    //   box.classList.remove('red', 'blue', 'yellow');
+    //   box.classList.add('red');
+    // });
+    // bBtn.addEventListener('click', function(){
+    //   box.classList.remove('red', 'blue', 'yellow');
+    //   box.classList.add('blue');
+    // });
+    // yBtn.addEventListener('click', function(){
+    //   box.classList.remove('red', 'blue', 'yellow');
+    //   box.classList.add('yellow');
+    // });
+  </script>
+</body>
+</html>
