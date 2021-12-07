@@ -16,16 +16,16 @@
   <table class="table table-striped table-hover">
     <thead>
       <tr>
-        <th onclick="indexSort(data)">index</th>
+        <th onclick="itemSort('index')">index</th>
         <th>picture</th>
-        <th onclick="ageSort(data)">age</th>
-        <th onclick="eyeColorSort(data)">eyeColor</th>
-        <th onclick="nameSort(data)">name</th>
-        <th onclick="genderSort(data)">gender</th>
-        <th onclick="companySort(data)">company</th>
-        <th onclick="emailSort(data)">email</th>
-        <th onclick="phoneSort(data)">phone</th>
-        <th onclick="addressSort(data)">address</th>
+        <th onclick="itemSort('age')">age</th>
+        <th onclick="itemSort('eyeColor')">eyeColor</th>
+        <th onclick="itemSort('name')">name</th>
+        <th onclick="itemSort('gender')">gender</th>
+        <th onclick="itemSort('company')">company</th>
+        <th onclick="itemSort('email')">email</th>
+        <th onclick="itemSort('phone')">phone</th>
+        <th onclick="itemSort('address')">address</th>
       </tr>
     </thead>
     <tbody></tbody>
@@ -33,51 +33,25 @@
   <script src="data.js"></script>
   <script>
     let click = true;
-    function itemSort(data, item) {
+    function itemSort(key) {
       if(click) {
         click = false;
         data.sort((a, b) => {
-          if (a[item] > b[item]) return 1;
-          if (a[item] < b[item]) return -1;
+          if (a[key] > b[key]) return 1;
+          if (a[key] < b[key]) return -1;
           return 0;
         })
       } else {
         click = true;
         data.sort((a, b) => {
-          if (a[item] > b[item]) return -1;
-          if (a[item] < b[item]) return 1;
+          if (a[key] > b[key]) return -1;
+          if (a[key] < b[key]) return 1;
           return 0;
         })
       }
       renderTable(data);
     }
-    function indexSort(data) {
-      itemSort(data, "index");
-    }
-    function ageSort(data) {
-      itemSort(data, "age");
-    }
-    function eyeColorSort(data) {
-      itemSort(data, "eyeColor");
-    }
-    function nameSort(data) {
-      itemSort(data, "name")
-    }
-    function genderSort(data) {
-      itemSort(data, "gender")
-    }
-    function companySort(data) {
-      itemSort(data, "company")
-    }
-    function emailSort(data) {
-      itemSort(data, "email")
-    }
-    function phoneSort(data) {
-      itemSort(data, "phone")
-    }
-    function addressSort(data) {
-      itemSort(data, "address")
-    }
+    
     function renderTable(data) {
       let tbodyData = [];
       for (const iterator of data) {
