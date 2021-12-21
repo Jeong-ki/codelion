@@ -220,3 +220,36 @@ t.insert(1);
 t.insert(4);
 t.insert(6);
 t.insert(9);
+
+
+let record = [
+  "Enter uid1234 Muzi", 
+  "Enter uid4567 Prodo",
+  "Leave uid1234",
+  "Enter uid1234 Prodo",
+  "Change uid4567 Ryan"
+];
+
+function solution(record) {
+  let result = [];
+  let answer = [];
+  let 유저정보 = {};
+
+  for(const iterator of record) {
+    const [상태, 아이디, 닉네임] = iterator.split(' ');
+    if(상태 === 'Enter') {
+      유저정보[아이디] = 닉네임;
+      result.push([아이디, '님이 들어왔습니다.']);
+    } else if (상태 === 'Leave') {
+      result.push([아이디, '님이 나갔습니다.']);
+    } else if (상태 === 'Change') {
+      유저정보[아이디] = 닉네임;
+    }
+  }
+  for(const [아이디, 메시지] of result) {
+    answer.push(유저정보[아이디] + 메시지)
+  }
+  return answer;
+}
+
+solution(record);
