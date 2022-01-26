@@ -1,5 +1,5 @@
 module.exports = function myLoader(item) {
-  console.log("hello my loader!");
+    console.log('hello my loader!');
 
-  return item.replace("console.log(", "alert(");
-};
+    return item.replace('console.log(', 'alert(');
+}
